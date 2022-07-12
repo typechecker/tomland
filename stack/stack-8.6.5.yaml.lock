@@ -18,6 +18,27 @@ packages:
       sha256: 8f67eea5401371f7e1ea44f2b74130e2b3b2cc16eec28b097f72c7ffbb56a58c
   original:
     hackage: hspec-hedgehog-0.0.1.2@sha256:4d09c7be34cdc941b78e4e964f71013ffeeb099ea32d8ede17ad9c03ae7a62e3,1470
+- completed:
+    hackage: hedgehog-1.1.1@sha256:301b45815b0e265a683aba0971c1246bfce0ad60b09fcd60bc782016254a291a,4639
+    pantry-tree:
+      size: 2646
+      sha256: 11a4efb8958b8958cdc26eae0517099140c2b7b2f9d3e876db5bb6eaa4edb618
+  original:
+    hackage: hedgehog-1.1.1@sha256:301b45815b0e265a683aba0971c1246bfce0ad60b09fcd60bc782016254a291a,4639
+- completed:
+    hackage: hashable-1.3.5.0@sha256:3a2beeafb220f9de706568a7e4a5b3c762cc4c9f25c94d7ef795b8c2d6a691d7,4240
+    pantry-tree:
+      size: 1248
+      sha256: 4df2f6b536a0fcc5f7d562cb29e373f27dc4a2747452ac5cc74c1599cab22fc5
+  original:
+    hackage: hashable-1.3.5.0@sha256:3a2beeafb220f9de706568a7e4a5b3c762cc4c9f25c94d7ef795b8c2d6a691d7,4240
+- completed:
+    hackage: base-orphans-0.8.6@sha256:eb6758d0160d607e0c45dbd6b196f515b9a589fd4f6d2f926929dd5d56282d37,3175
+    pantry-tree:
+      size: 1272
+      sha256: f889d6903383305688e6e703982bfdc985649b7d4538429e44f98f99d8f73c07
+  original:
+    hackage: base-orphans-0.8.6@sha256:eb6758d0160d607e0c45dbd6b196f515b9a589fd4f6d2f926929dd5d56282d37,3175
 snapshots:
 - completed:
     size: 524996
