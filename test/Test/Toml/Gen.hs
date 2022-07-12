@@ -258,7 +258,7 @@ genFloat = Gen.float (Range.constant (-10000.0) 10000.0)
 genSet :: Ord a => Gen a -> Gen (Set a)
 genSet genA = fromList <$> genList genA
 
-genHashSet :: (Eq a, Hashable a) => Gen a -> Gen (HashSet a)
+genHashSet :: Hashable a => Gen a -> Gen (HashSet a)
 genHashSet genA = fromList <$> genList genA
 
 genNonEmpty :: Gen a -> Gen (NonEmpty a)
@@ -306,11 +306,11 @@ genUniHex8Color = do
     pure . Text.pack $ "\\U" ++ hex
 
 -- | Generates some unescaped unicode string
-genUnicodeChar :: Gen Text
-genUnicodeChar = Gen.element
-    [ "č", "ć", "š", "đ", "ž", "Ö", "ё"
-    , "в", "ь", "ж", "ю", "ч", "ü", "я"
-    ]
+-- genUnicodeChar :: Gen Text
+-- genUnicodeChar = Gen.element
+--     [ "č", "ć", "š", "đ", "ž", "Ö", "ё"
+--     , "в", "ь", "ж", "ю", "ч", "ü", "я"
+--     ]
 
 -- | Generates text from different symbols.
 genText :: Gen Text
