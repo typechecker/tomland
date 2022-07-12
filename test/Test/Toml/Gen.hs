@@ -258,7 +258,9 @@ genFloat = Gen.float (Range.constant (-10000.0) 10000.0)
 genSet :: Ord a => Gen a -> Gen (Set a)
 genSet genA = fromList <$> genList genA
 
-genHashSet :: Hashable a => Gen a -> Gen (HashSet a)
+-- WARNING: The Eq a constraint is needed when building with stack but not
+-- cabal so we get -Wredundant-constraints.
+genHashSet :: (Eq a, Hashable a) => Gen a -> Gen (HashSet a)
 genHashSet genA = fromList <$> genList genA
 
 genNonEmpty :: Gen a -> Gen (NonEmpty a)

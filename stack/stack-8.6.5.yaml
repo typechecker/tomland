@@ -1,7 +1,7 @@
 resolver: lts-14.27
 packages:
 - ..
-allow-newer: true
 extra-deps:
 - validation-selective-0.1.0.2@sha256:c878846bfffeba69efa3b4866025f249656e0e0a129fed6d446eb602382d328b,3856
 - hspec-hedgehog-0.0.1.2@sha256:4d09c7be34cdc941b78e4e964f71013ffeeb099ea32d8ede17ad9c03ae7a62e3,1470
+- hedgehog-1.1.1@sha256:301b45815b0e265a683aba0971c1246bfce0ad60b09fcd60bc782016254a291a,4639
